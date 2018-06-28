@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
 namespace TilemapLibrary
 {
@@ -51,14 +48,6 @@ namespace TilemapLibrary
         public string GetAttribute(string Attribute)
         {
             return GetAttribute<string>(Attribute);
-            /*for (int i = 0; i < Attributes.Count; i++)
-            {
-                string[] Temp = Attributes[i].Split(':');
-                if (Temp.Length <= 1) continue;
-                return Temp[1];
-            }
-            Attributes.Add(Attribute + ":0");
-            return "0";*/
         }
         public T GetAttribute<T>(string Attribute)
         {
